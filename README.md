@@ -1,4 +1,4 @@
-## Lecho (Laravel Echo) for Flutter
+## Lecho [Laravel Echo for Flutter](https://github.com/kakajansh/echo) Fork
 
 Basically, this package is port of official [Laravel Echo javascript library](https://github.com/laravel/echo). It helps subscribe to channels and listen for events broadcasted from your Laravel app.
 
@@ -58,7 +58,7 @@ PusherClient pusherClient = PusherClient(
 );
 
 // Create echo instance
-Lecho echo = new Echo(
+Lecho echo = new Lecho(
   broadcaster: EchoBroadcasterType.Pusher,
   client: pusherClient,
 );
@@ -108,7 +108,7 @@ IO.Socket socket = IO.io(
 );
 
 // Create echo instance
-Lecho echo = new Echo(
+Lecho echo = new Lecho(
   broadcaster: EchoBroadcasterType.SocketIO,
   client: socket,
   options: {
